@@ -1,0 +1,14 @@
+.head {
+  height: 100%;
+}
+
+.body {
+  height: 100%;
+  margin: 0;
+}
+
+.class1 {
+  height: 20%;
+  width: 20%;
+  background-color: rgb(200,240,255);
+}
