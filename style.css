@@ -1,14 +1,161 @@
-.head {
+head {
   height: 100%;
 }
 
-.body {
+body {
   height: 100%;
   margin: 0;
 }
 
-.class1 {
-  height: 20%;
-  width: 20%;
-  background-color: rgb(200,240,255);
+.sp8 {
+  height: 8px;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(220,240,245)
+}
+.logobg {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(215,240,245);
+  z-index: 5;
+}
+
+.logo {
+  position: absolute;
+  border: 4px solid rgb(100,100,100);
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(240,250,255);
+  margin-left: 8px;
+  z-index: 5;
+  
+  
+}
+.holder1 {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 510px;
+  height: 70px;
+}
+
+.b1 {
+  flex: 1.4;
+  background-color: rgb(215,240,245);
+  text-align: center;
+  transition: 0.5s;
+  line-height: 64px;
+  font-size: 21px;
+}
+
+.b2 {
+  flex: 1;
+  background-color: rgb(215,240,245);
+  text-align: center;
+  transition: 0.5s;
+  line-height: 64px;
+  font-size: 21px;
+}
+
+.b3 {
+  flex: 1;
+  background-color: rgb(215,240,245);
+  text-align: center;
+  transition: 0.5s;
+  line-height: 64px;
+  font-size: 21px;
+}
+
+.b4 {
+  flex: 1;
+  background-color: rgb(215,240,245);
+  text-align: center;
+  transition: 0.5s;
+  line-height: 64px;
+  font-size: 21px;
+}
+
+.b5 {
+  flex: 1;
+  background-color: rgb(215,240,245);
+  text-align: center;
+  transition: 0.5s;
+  line-height: 64px;
+  font-size: 21px;
+}
+
+
+.b1:hover {
+  flex: 1.5;
+  background-color: rgb(200,230,235);
+  font-size: 22px;
+}
+
+.b2:hover {
+  flex: 1.1;
+  background-color: rgb(200,230,235);
+  font-size: 22px;
+}
+
+.b3:hover {
+  flex: 1.1;
+  background-color: rgb(200,230,235);
+  font-size: 22px;
+}
+
+.b4:hover {
+  flex: 1.1;
+  background-color: rgb(200,230,235);
+  font-size: 22px;
+}
+
+.b5:hover {
+  flex: 1.1;
+  background-color: rgb(200,230,235);
+  font-size: 22px;
+}
+
+.mainbody {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyleft {
+  flex: 2;
+  background-color: rgb(250,252,255);
+}
+
+.bl-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 8px;
+}
+
+.bodyright {
+  flex: 1;
+  background-color: rgb(245,248,250);
+  max-width: 280px;
+  min-width: 180px;
+  
+}
+
+.img1 {
+  width: 88%;
+  margin-top: 10px;
+  margin-left: 6%;
+}
+
+.desc1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 17px;
 }
