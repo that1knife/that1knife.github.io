@@ -43,7 +43,9 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  width: 510px;
+  width: 60%;
+  min-width: 510px;
+  max-width: 580px;
   height: 70px;
 }
 
