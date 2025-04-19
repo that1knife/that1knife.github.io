@@ -1,51 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
   <div class="all">
     <div class="header">
       <div class="logobg">
         <div class="sp8"></div>
-        <div class="logo">
+        <div id="b0" class="logo" onclick="switch2(this)">
         (logo)
         </div>
       </div>
       <div class="holder1">
-        <div class="b1">
+        <div id="b1" class="b1" onclick="switch2(this)">
           Programming
         </div>
-        <div class="b2">
+        <div id="b2" class="b2" onclick="switch2(this)">
           Theatre
         </div>
-        <div class="b3">
+        <div id="b3" class="b3" onclick="switch2(this)">
           Music
         </div>
-        <div class="b4">
+        <div id="b4" class="b4" onclick="switch2(this)">
           Building
         </div>
-        <div class="b5">
+        <div id="b5" class="b5" onclick="switch2(this)">
           More
         </div>
       </div>
-    </div>
-    <div class="mainbody">
-      <div class="bodyleft">
-        <div class="bl-title">
-        Welcome to my website
-        </div>
-        <div class="desc1">
-        Hello! Welcome to my website. This is a little introduction to me that will go here. Hope you enjoy!
-        </div>
-      </div>
-      <div class="bodyright">
-        <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
-        <div class=desc1>
-          Image description/text goes here
+      <div id="settingsH" class="settingsH">
+        <span class="material-symbols-outlined settings" onclick="openS()">
+          settings
+        </span>
+        <div id="settingsM" class="settingsM">
+          <div class="settingsI" id="settingsI">
+          Light/dark mode:
+          </div>
+          <div id="bgs" class="bgs" onclick="switch3()">
+          </div>
+          <div id="is" class="is" onclick="switch3()">
+          </div>
         </div>
       </div>
     </div>
+    <div class="sp70"></div>
+    
+    <!--Pages: Home page-->
+    
+    <div id="p0" class="p0">
+      <div class="mainbody">
+        <div class="bodyleft">
+          <div class="bl-title">
+          Welcome to my website
+          </div>
+          <div class="desc1">
+            Hello! Welcome to my website. My name is Thomas Holladay, and I am a 17 year old Freshman in my first semester at SVU. I love to do a code, act, make and play music, build things, learn things and languages, and many random other things I get interested in from time to time.
+          </div>
+          <div class="desc1">
+            This website was built as my final project for my Authoring for the Web class, but I've also taken it as a fun project for myself and a showcase of my interests and skills. I hope you enjoy!
+          </div>
+        </div>
+        <div class="bodyright">
+          <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
+          <div class=desc1>
+            Image description/text goes here
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Pages: Programming-->
+    
+    <div id="p1" class="p1">
+      <div class="mainbody">
+        <div class="bodyleft">
+          <div class="bl-title">
+          Programming:
+          </div>
+          <div class="desc1">
+          I have always loved computers in general. But since 8th grade, I've loved to code, whether it be something like scratch, making video games in godot, or making websites like these.
+          </div>
+          <div class="desc1">
+          As previously mentioned, I started scratch in 8th grade, and I quickly became familiar with the software. I made more and more, and later on it seemed like I should switch to a full game engine. But even through highschool, there was always something that brought me back to scratch, whether it was because it was something I was familiar with and didn't need to learn more of, or because I thought I should get a better computer to run more advanced software first. Either way, I kept having small ideas and kept running back to scratch.
+          </div>
+          <div class="desc1">
+          However, I did also learn other things. I took Harvards cs50 course online in high school, learned basic python, and followed a couple tutorials for godot. Now that I am in college I am pursuing a computer science major which has allowed me to learn stuff like how to make this website, and I will continue to learn more and more as I pursue my degree.
+          </div>
+          <div class="desc1">
+          Because I truly love to create things with code, computer science classes are quite enjoyable to me. It makes the classes go much beyond just getting homework done, and instead the classes are simply what help me in my journey to learn and create the things I want to create. So, whenever I have time, I love to build upon wha I've learned in class, create what I want to for fun, and continue to build my knowledge in other areas, such as a python course I sometimes visit on Brilliant.
+          </div>
+          <div class="sp16"></div>
+          <div class="desc1">
+          Here are some of the projects I've created on scratch:
+          </div>
+          <div>
+          <a href="https://scratch.mit.edu/projects/814391412/" target="_blank" class="desc1">Territorial Conquer - State.io - v1.2</a></div>
+          <div><a href="https://scratch.mit.edu/projects/879188019/" target="_blank" class="desc1">PI Tester v1.1</a></div>
+          <div><a href="https://scratch.mit.edu/projects/664562729/" target="_blank" class="desc1">Text Based Scratch Calculator</a></div>
+          <div><a href="https://scratch.mit.edu/projects/1100683150/" target="_blank" class="desc1">Triolingi (Early access beta)</a></div>
+          <div class="desc1">
+          If you want to see more, you can visit them here on my <a href="https://scratch.mit.edu/users/ThomasHolladay/" target="_blank">profile</a>.
+          </div>
+          <div class="sp16"></div>
+          <div class="desc1">
+          Here is a game I made for my institute final project (using HTML, CSS, and JavaScript):
+          </div>
+          <div class="sp16"></div>
+          <div class="game">
+            <div id="win" class="win">
+            You won! Click below to play again.
+            </div>
+            <button onclick="resetG()" class="resetb">
+            Reset
+            </button>
+            <div id="id1" class="grid">
+              <div id=g0 class=blank onclick=myfunc(this)></div>
+              <div id=g1 class=blank onclick=myfunc(this)></div>
+              <div id=g2 class=blank onclick=myfunc(this)></div>
+              <div id=g3 class=blank onclick=myfunc(this)></div>
+              <div id=g4 class=blank onclick=myfunc(this)></div>
+              <div id=g5 class=blank onclick=myfunc(this)></div>
+              <div id=g6 class=blank onclick=myfunc(this)></div>
+              <div id=g7 class=blank onclick=myfunc(this)></div>
+              <div id=g8 class=blank onclick=myfunc(this)></div>
+              <div id=g9 class=blank onclick=myfunc(this)></div>
+              <div id=g10 class=blank onclick=myfunc(this)></div>
+              <div id=g11 class=blank onclick=myfunc(this)></div>
+              <div id=g12 class=blank onclick=myfunc(this)></div>
+              <div id=g13 class=blank onclick=myfunc(this)></div>
+              <div id=g14 class=blank onclick=myfunc(this)></div>
+              <div id=g15 class=blank onclick=myfunc(this)></div>
+            </div>
+          </div>
+          <div class="sp70">
+          </div>
+        </div>
+        
+        
+        <div class="bodyright">
+          <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
+          <div class=desc1>
+            Coding image
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!--Page: Theatre-->
+    
+    <div id="p2" class="p2">
+      <div class="mainbody">
+        <div class="bodyleft">
+          <div class="bl-title">
+             Theatre:
+          </div>
+          
+          <div class="desc1">
+            I've loved to act for a long time. It began somewhat when I was young, but really began to become a thing for me when I was in middle school. I had a friend I loved to do plays with at his house and make movies, and in 7th and 8th grade I took theatre classes, but was unable to do school musicals due to covid.
+          </div>
+          <div class="desc1">
+            I then moved to Virginia, where I began to do plays at the Andy Griffith Playhouse in Mount Airy. As of April 2025, I have participated in 15 plays there. Here they are as well as my roles:
+          </div>
+          <ul class="list1">
+            <li>The Wizard of Oz  -  Winkie, Ozian</li>
+            <li>The Best Christmas Pageant Ever  -  Elmer</li>
+            <li>Seussical the Musical Jr.  -  Wickersham Brother</li>
+            <li>Little Women  -  Rodrigo</li>
+            <li>Shrek the Musical Jr.  -  Pig</li>
+            <li>Elf the Musical Jr.  -  Buddy</li>
+            <li>Cinderella  -  Waltzer</li>
+            <li>Frozen Jr.  -  Oaken</li>
+            <li>A Christmas Carol  -  Businessman, Andrew</li>
+            <li>Grease the Musical (school version)  -  Roger</li>
+            <li>Lion King the Musical  -  Banzai</li>
+            <li>Into the Woods  -  Rapunzel's prince</li>
+            <li>Young Frankenstein  (Tech, spotlight)</li>
+            <li>The Best Christmas Pageant Ever  -  Firefighter</li>
+            <li>A Christmas Carol  -  Businessman, Andrew</li>
+          </ul>
+          <div class="desc1">
+            Now that I am currently at SVU, I have continued taking Theatre here. As of April 2025 I have been here for one semester, taken Acting 101 and have been in "Oklahoma!" as the role Ali Hakim.
+          </div>
+          <div class="desc1">
+          Overall my theatre experience has been great, I love to act and the community that theatre brings, most of my closest friends have come from the theatre and that has honestly been what I've probably loved the most.
+          </div>
+          <div class="sp70">
+          </div>
+        </div>
+        
+        <div class="bodyright">
+          <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
+          <div class=desc1>
+            Acting image goes here
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Page: Music-->
+    
+    <div id="p3" class="p3">
+      <div class="mainbody">
+        <div class="bodyleft">
+          <div class="bl-title">
+            Music:
+          </div>
+          <div class="desc1">
+            For all of my life, I have loved to make music in some way. I have always sung, messed around on the piano, or made music using something else.
+          </div>
+        </div>
+        <div class="bodyright">
+          <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
+          <div class=desc1>
+            Music uh stuff
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Page: Building-->
+    
+    <div id="p4" class="p4">
+      <div class="mainbody">
+        <div class="bodyleft">
+          <div class="bl-title">
+          This is Building
+          </div>
+          <div class="desc1">
+            I like to build stuff
+          </div>
+        </div>
+        <div class="bodyright">
+          <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
+          <div class=desc1>
+            Stuff I've built goes here
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Page: More-->
+    
+    <div id="p5" class="p5">
+      <div class="mainbody">
+        <div class="bodyleft">
+          <div class="bl-title">
+          This is More
+          </div>
+          <div class="desc1">
+            These are some other things I like
+          </div>
+        </div>
+        <div class="bodyright">
+          <img src="https://thevanillaroom.co.uk/wp-content/uploads/2023/12/900px-Image-Placeholder.jpg" class="img1">
+          <div class=desc1>
+            Other things I like go here
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
   
 </body>
