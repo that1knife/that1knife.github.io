@@ -387,21 +387,24 @@ body {
   margin-top: 10px;
   margin-left: 10%;
   margin-right: 10%;
-  font-size: clamp(19px, 2.4vw, 22px);
+  font-size: clamp(19px, 2.4vw, 23px);
 }
 
 
 .game {
   width: 84%;
+  max-width: 720px;
   border: 6px solid rgb(190,190,190);
   aspect-ratio: 1/1;
-  margin-left: 8%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgb(230,230,230);
   border-radius: 6%;
   
 }
 
 .grid {
+  max-width: calc(720px - 2.6vw);
   margin-top: 2.6vw;
   margin-left: 2.6vw;
   display: grid;
@@ -412,6 +415,8 @@ body {
 .blank {
   width: 11vw;
   height: 11vw;
+  max-width: 140px;
+  max-height: 140px;
   box-sizing: border-box;
   padding: 6px;
   border: 6px solid rgb(80,80,91);
