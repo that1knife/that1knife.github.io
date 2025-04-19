@@ -375,6 +375,11 @@ body {
   margin-left: 6%;
 }
 
+.audio1 {
+  margin: auto;
+  width: 300px;
+}
+
 .bl-title {
   text-align: center;
   font-size: clamp(37px, 4.8vw, 45px);
@@ -448,5 +453,9 @@ body {
 ul.list1 {
   margin-left: 10%;
   list-style-type: circle;
-  font-size: 20px;
+  font-size: clamp(19px, 2.4vw, 23px);
 }
+
+
+
+
