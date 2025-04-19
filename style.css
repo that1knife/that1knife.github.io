@@ -365,8 +365,8 @@ body {
 .bodyright {
   flex: 1;
   background-color: rgb(245,248,250);
-  max-width: 500px;
-  min-width: 180px;
+  max-width: 550px;
+  min-width: 200px;
 }
 
 .img1 {
