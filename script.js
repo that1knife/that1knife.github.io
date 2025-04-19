@@ -17,8 +17,8 @@ let content = [
   "...it's all about the core",
   "The natural man...",
   "...is an enemy to God",
-  "last",
-  "one",
+  "The restoration...",
+  "...is ongoing",
 ]
 let color = [
   "rgb(210,255,210)",
@@ -49,7 +49,7 @@ function resetG() {
   lastid = -1
   correct = []
   document.getElementById("win").style.display = "none"
-  for (let i = ids1.length-1; i > -1; i--) {
+  for (let i = ids1.length - 1; i > -1; i--) {
     rand = Math.floor(Math.random() * ids1.length)
     ids2.push(ids1.splice(rand, 1)[0])
     document.getElementById("g" + i).innerText = ""
@@ -63,8 +63,8 @@ resetG()
 function switch2(var1) {
   id = var1.id
   selected = id.charAt(1)
-	scrollTo({top: 0, left: 0, behavior: "smooth" })
-  
+  scrollTo({ top: 0, left: 0, behavior: "smooth" })
+
   for (let n = 5; n > 0; n--) {
     if (n != selected) {
       document.getElementById("p" + n).style.display = "none"
@@ -75,7 +75,6 @@ function switch2(var1) {
     document.getElementById(id).className = "bselected " + id
   }
   document.getElementById("p" + selected).style.display = "block"
-	
 }
 
 function openS() {
@@ -113,8 +112,10 @@ function myfunc(clicked) {
       for (let i = 0; i < 16; i++) {
         if (!correct.includes(i)) {
           document.getElementById("g" + i).innerText = ""
-          document.getElementById("g" + i).style.backgroundColor = "rgb(150,150,161)"
-          document.getElementById("g" + i).style.border = "6px solid rgb(80,80,91)"
+          document.getElementById("g" + i).style.backgroundColor =
+            "rgb(150,150,161)"
+          document.getElementById("g" + i).style.border =
+            "6px solid rgb(80,80,91)"
         }
       }
       count = 0
@@ -128,12 +129,14 @@ function myfunc(clicked) {
       if (mycolor === lastc) {
         correct.push(id2)
         correct.push(lastid)
-        document.getElementById("g" + lastid).style.border = "0 solid rgb(240,255,240)"
-        document.getElementById("g" + id2).style.border = "0 solid rgb(240,255,240)"
+        document.getElementById("g" + lastid).style.border =
+          "0 solid rgb(240,255,240)"
+        document.getElementById("g" + id2).style.border =
+          "0 solid rgb(240,255,240)"
         document.getElementById("g" + lastid).style.padding = "12px"
         document.getElementById("g" + id2).style.padding = "12px"
-      	if (correct.length === 16) {
-        	document.getElementById("win").style.display = "block"
+        if (correct.length === 16) {
+          document.getElementById("win").style.display = "block"
         }
       }
     } else {
@@ -143,4 +146,3 @@ function myfunc(clicked) {
     count = count + 1
   }
 }
-
