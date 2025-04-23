@@ -380,6 +380,13 @@ body {
   width: 300px;
 }
 
+.vid1 {
+  width: 88%;
+  aspect-ratio: 16/9;
+  margin-top: 10px;
+  margin-left: 6%;
+}
+
 .bl-title {
   text-align: center;
   font-size: clamp(37px, 4.8vw, 45px);
