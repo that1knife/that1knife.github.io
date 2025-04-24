@@ -436,7 +436,7 @@ body {
   background-color: rgb(150,150,161);
   font-family: verdana;
   color: rgb(0,0,5);
-  font-size: clamp(8px, 1.5vw, 22px);
+  font-size: clamp(8px, 1.48vw, 21px);
   transition: 0.45s;
   border-radius: 18%;
   cursor: pointer;
@@ -445,7 +445,7 @@ body {
 
 .win {
   display: none;
-  font-size: clamp(14px, 3vw, 32px);
+  font-size: clamp(14px, 3vw, 34px);
   text-align: center;
   margin-top: 6px;
 }
