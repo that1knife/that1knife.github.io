@@ -465,4 +465,8 @@ ul.list1 {
 
 
 
-
+@media only screen and (max-width: 480px) {
+  .mainbody {
+    flex-direction: column;
+  }
+}
