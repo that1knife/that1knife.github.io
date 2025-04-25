@@ -222,8 +222,7 @@ body {
   height: 70px;
 }
 
-.b1 {
-  flex: 1.4;
+.ab {
   background-color: rgb(215,240,245);
   text-align: center;
   transition: 0.5s;
@@ -231,88 +230,59 @@ body {
   font-size: clamp(21px, 2.6vw, 27px);
   border-bottom: 0 solid rgb(240,240,240,0.3);
   cursor: pointer;
+}
+
+
+.b1 {
+  flex: 1.4;
 }
 
 .b2 {
   flex: 1;
-  background-color: rgb(215,240,245);
-  text-align: center;
-  transition: 0.5s;
-  line-height: 64px;
-  font-size: clamp(21px, 2.6vw, 27px);
-  border-bottom: 0 solid rgb(240,240,240,0.3);
-  cursor: pointer;
 }
 
 .b3 {
   flex: 1;
-  background-color: rgb(215,240,245);
-  text-align: center;
-  transition: 0.5s;
-  line-height: 64px;
-  font-size: clamp(21px, 2.6vw, 27px);
-  border-bottom: 0 solid rgb(240,240,240,0.3);
-  cursor: pointer;
 }
 
 .b4 {
   flex: 1;
-  background-color: rgb(215,240,245);
-  text-align: center;
-  transition: 0.5s;
-  line-height: 64px;
-  font-size: clamp(21px, 2.6vw, 27px);
-  border-bottom: 0 solid rgb(240,240,240,0.3);
-  cursor: pointer;
 }
 
 .b5 {
   flex: 1;
-  background-color: rgb(215,240,245);
-  text-align: center;
-  transition: 0.5s;
-  line-height: 64px;
-  font-size: clamp(21px, 2.6vw, 27px);
-  border-bottom: 0 solid rgb(240,240,240,0.3);
-  cursor: pointer;
+}
+
+.ab:hover {
+  background-color: rgb(200,230,235);
+  font-size: clamp(22px, 2.7vw, 28px);
+  border-bottom: 6px solid rgb(210,210,210,0.6);
 }
 
 
 .b1:hover {
   flex: 1.5;
-  background-color: rgb(200,230,235);
-  font-size: clamp(22px, 2.7vw, 28px);
-  border-bottom: 6px solid rgb(210,210,210,0.6);
 }
 
 .b2:hover {
   flex: 1.1;
-  background-color: rgb(200,230,235);
-  font-size: clamp(22px, 2.7vw, 28px);
-  border-bottom: 6px solid rgb(210,210,210,0.6);
 }
 
 .b3:hover {
   flex: 1.1;
-  background-color: rgb(200,230,235);
-  font-size: clamp(22px, 2.7vw, 28px);
-  border-bottom: 6px solid rgb(210,210,210,0.6);
 }
 
 .b4:hover {
   flex: 1.1;
-  background-color: rgb(200,230,235);
-  font-size: clamp(22px, 2.7vw, 28px);
-  border-bottom: 6px solid rgb(210,210,210,0.6);
 }
 
 .b5:hover {
   flex: 1.1;
-  background-color: rgb(200,230,235);
-  font-size: clamp(22px, 2.7vw, 28px);
-  border-bottom: 6px solid rgb(210,210,210,0.6);
 }
 
+.menuselect {
+  display: none;
+}
 
 .p0 {
   display: block;
@@ -464,6 +434,71 @@ ul.list1 {
 }
 
 
+@keyframes openM {
+  0% {
+    display: flex;
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes closeM {
+  0% {
+    display: flex;
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 580px) {
+  .holder1 {
+    display: none;
+    position: absolute;
+    right: 70px;
+    top: 70px;
+    width: 145px;
+    min-width: 145px;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .ab {
+    height: 50px;
+    line-height: 50px;
+    font-size: clamp(21px, 2.6vw, 27px);
+    background-color: rgb(230,245,250)
+  }
+  .ab:hover {
+    background-color: rgb(205,238,242);
+  }
+  .menuselect {
+    display: block;
+    position: absolute;
+    right: 70px;
+    top: 0;
+    width: 145px;
+    height: 70px;
+    max-height: 70px;
+    background-color: rgb(215,240,245);
+    text-align: center;
+    transition: 0.5s;
+    line-height: 64px;
+    font-size: 26px;
+    border-bottom: 0 solid rgb(240,240,240,0.3);
+    cursor: pointer;
+  }
+  .menuselect:hover {
+    background-color: rgb(200,230,235);
+    font-size: 28px;
+    border-bottom: 6px solid rgb(210,210,210,0.6);
+    height: 64px;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   .mainbody {
