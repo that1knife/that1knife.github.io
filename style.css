@@ -446,7 +446,6 @@ ul.list1 {
 
 @keyframes closeM {
   0% {
-    display: flex;
     scale: 1;
   }
   100% {
@@ -455,11 +454,6 @@ ul.list1 {
   }
 }
 
-@media only screen and (min-width: 581px) {
-  .holder {
-    display: flex;
-  }
-}
 
 @media only screen and (max-width: 580px) {
   .holder1 {
