@@ -158,15 +158,35 @@ function myfunc(clicked) {
 
 function openmenu() {
 	if (mtoggle === 0) {
-  	document.getElementById("hold").style.display="flex"
-    document.getElementById("hold").style.animation = "openM 0.2s"
   	mtoggle = 1
+    document.getElementById("hold").style.animation = "openM 0.2s"
+    setTimeout(function () {
+      	show()
+    	}, 180)
   }
   else {
-  	document.getElementById("hold").style.animation = "closeM 0.2s"
-  	setTimeout(function () {
-      document.getElementById("hold").style.display = "none"
-    }, 180)
-    mtoggle = 0
+  	mtoggle = 0
+    document.getElementById("hold").style.animation = "closeM 0.2s"
+  	show()
   }
 }
+
+function show() {
+	if (window.innerWidth > 580) {
+  	document.getElementById("hold").style.display = "flex"
+    document.getElementById("hold").style.animation = ""
+  }
+  else {
+  	if (mtoggle === 0) {
+      document.getElementById("hold").style.display = "none"
+ 		 }
+  	else {
+    	document.getElementById("hold").style.display="flex"
+   	  
+  		
+  	}
+  }
+}
+
+window.addEventListener('resize', show);
+
