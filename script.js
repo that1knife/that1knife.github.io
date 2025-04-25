@@ -1,3 +1,4 @@
+mtoggle = 0
 stoggle = 0
 state = 0
 
@@ -68,13 +69,20 @@ function switch2(var1) {
   for (let n = 5; n > 0; n--) {
     if (n != selected) {
       document.getElementById("p" + n).style.display = "none"
-      document.getElementById("b" + n).className = "b" + n
+      document.getElementById("b" + n).className = "b" + n + " ab"
     }
   }
   if (id != "b0") {
-    document.getElementById(id).className = "bselected " + id
+    document.getElementById(id).className = "bselected " + id + " ab"
   }
   document.getElementById("p" + selected).style.display = "block"
+  if (window.innerWidth < 580) {
+  	document.getElementById("hold").style.animation = "closeM 0.2s"
+  	setTimeout(function () {
+      document.getElementById("hold").style.display = "none"
+    }, 180)
+    mtoggle = 0
+  }
 }
 
 function openS() {
@@ -144,5 +152,21 @@ function myfunc(clicked) {
       lastid = id2
     }
     count = count + 1
+  }
+}
+
+
+function openmenu() {
+	if (mtoggle === 0) {
+  	document.getElementById("hold").style.display="flex"
+    document.getElementById("hold").style.animation = "openM 0.2s"
+  	mtoggle = 1
+  }
+  else {
+  	document.getElementById("hold").style.animation = "closeM 0.2s"
+  	setTimeout(function () {
+      document.getElementById("hold").style.display = "none"
+    }, 180)
+    mtoggle = 0
   }
 }
