@@ -104,10 +104,65 @@ function switch3() {
     document.getElementById("is").className = "is is1"
     document.getElementById("bgs").className = "bgs bgs1"
     state = 1
+    
+    var r = document.querySelector(':root');
+
+    // white/gray
+    r.style.setProperty('--bcol1', 'rgb(28,30,36)');
+    r.style.setProperty('--bcol2', 'rgb(35,37,45)');
+    // blues
+    r.style.setProperty('--bcol3', 'rgb(72,102,112)');
+    r.style.setProperty('--bcol4', 'rgb(65,95,105)');
+    r.style.setProperty('--bcol5', 'rgba(55,85,95, 0.8)');
+    r.style.setProperty('--bcol6', '25,30,35');
+    // button hover/selected
+    r.style.setProperty('--bcol7', 'rgb(50,85,95)');
+    r.style.setProperty('--bcol8', 'rgb(40,75,85)');
+    r.style.setProperty('--bcol9', 'rgb(30,65,75)');
+    // vertical menu buttons
+    r.style.setProperty('--bcol10', 'rgb(80,110,120)');
+    r.style.setProperty('--bcol11', 'rgb(65,95,105)');
+    // borders
+    r.style.setProperty('--brcol1', '10,15,20');  
+    r.style.setProperty('--brcol2', '70,75,80');
+    r.style.setProperty('--brcol3', '40,45,50');
+    r.style.setProperty('--brcol4', 'rgba(30,35,40,0.8)');
+    // text/item
+    r.style.setProperty('--tcol1', 'rgb(230,230,238)');
+    r.style.setProperty('--tcol2', 'rgb(225,225,240)');
+    r.style.setProperty('--tcol3', 'rgb(205,205,215)');
+    
   } else {
     document.getElementById("is").className = "is is2"
     document.getElementById("bgs").className = "bgs bgs2"
     state = 0
+    
+    var r = document.querySelector(':root');
+
+    // white/gray
+    r.style.setProperty('--bcol1', 'rgb(250,252,255)');
+    r.style.setProperty('--bcol2', 'rgb(241,245,247)');
+    // blues
+    r.style.setProperty('--bcol3', 'rgb(220,240,245)');
+    r.style.setProperty('--bcol4', 'rgb(215,240,245)');
+    r.style.setProperty('--bcol5', 'rgba(200,220,225, 0.5)');
+    r.style.setProperty('--bcol6', '240,250,255');
+    // button hover/selected
+    r.style.setProperty('--bcol7', 'rgb(200,230,235)');
+    r.style.setProperty('--bcol8', 'rgb(175,220,225)');
+    r.style.setProperty('--bcol9', 'rgb(170,210,215)');
+    // vertical menu buttons
+    r.style.setProperty('--bcol10', 'rgb(230,245,250)');
+    r.style.setProperty('--bcol11', 'rgb(205,238,242)');
+    // borders
+    r.style.setProperty('--brcol1', '210,225,230');  
+    r.style.setProperty('--brcol2', '240,240,240');
+    r.style.setProperty('--brcol3', '210,210,210');
+    r.style.setProperty('--brcol4', 'rgba(180,180,180,0.8)');
+    // text/item
+    r.style.setProperty('--tcol1', 'rgb(10,10,20)');
+    r.style.setProperty('--tcol2', 'rgb(50,50,50)');
+    r.style.setProperty('--tcol3', 'rgb(25,25,25)');
   }
 }
 
