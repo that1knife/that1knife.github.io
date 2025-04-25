@@ -160,14 +160,14 @@ function openmenu() {
 	if (mtoggle === 0) {
   	mtoggle = 1
     document.getElementById("hold").style.animation = "openM 0.2s"
-    setTimeout(function () {
-      	show()
-    	}, 180)
+    show()
   }
   else {
   	mtoggle = 0
     document.getElementById("hold").style.animation = "closeM 0.2s"
-  	show()
+  	setTimeout(function () {
+      	show()
+    	}, 180)
   }
 }
 
