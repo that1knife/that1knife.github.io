@@ -451,6 +451,13 @@ body {
   left: 1.2vw
 }
 
+.scratch {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  aspect-ratio: 4/3.2;
+}
+
 
 ul.list1 {
   margin-left: 10%;
